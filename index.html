@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>JavaScript Form Validator</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <form class="form">
+        <h1>JavaScript Form Validator</h1>
+
+        <div class="tab tab1">
+          <div class="form-field-container">
+            <label for="firstname">First name</label>
+            <input type="text" id="firstname"  />
+            <span class="placeholder">-</span>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-field-container">
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname"  />
+            <span class="placeholder">-</span>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-field-container">
+            <label for="email">Email</label>
+            <input type="text" id="email"  />
+            <span class="placeholder">e.g. john@example.com</span>
+            <small>Error message</small>
+          </div>
+        </div> 
+
+        <div class="tab tab2">
+          <div class="form-field-container">
+            <label for="username">Username</label>
+            <input type="text" id="username"  />
+            <span class="placeholder"
+              >Enter your username (letters and/or numbers)</span
+            >
+            <small>Error message</small>
+          </div>
+
+          <div class="form-field-container">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              
+            />
+            <span class="placeholder">Enter your password</span>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-field-container">
+            <label for="password-confirm">Confirm password</label>
+            <input
+              type="password"
+              id="password-confirm"
+              
+            />
+            <span class="placeholder">Confirm your password</span>
+            <small>Error message</small>
+          </div>
+        </div>
+        <div class="button-container">
+          <!-- onclick="nextPrev(-1) -->
+          <button type="button" class="btn btn-prev" onclick="prevTab()">  
+            Previous
+          </button>
+          <button type="button" class="btn btn-next" onclick="nextTab()">
+            Next
+          </button>
+
+          <button type="submit" class="btn btn-submit">
+            Submit
+          </button>
+        </div>
+
+        <div class="stepContainer">
+          <span class="step active">1</span>
+          <span class="step">2</span>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

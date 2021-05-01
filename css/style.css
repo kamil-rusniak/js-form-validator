@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #3b414c;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #fafafa, #3b414c), repeating-radial-gradient(circle at center center, #fafafa, #fafafa, 25px, transparent 50px, transparent 25px);
+  background-blend-mode: multiply;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.main-container {
+  width: 40rem;
+  min-height: 60vh;
+  background: #eaeaea55;
+  box-shadow: 4px 4px 18px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 0.6rem;
+}
+
+.form {
+  padding: 2rem 4rem;
+}
+
+.form .placeholder {
+  display: block;
+  color: #000;
+  background: #eaeaeab7;
+  text-align: center;
+  font-size: 0.9rem;
+  border: none;
+}
+
+.form-field-container {
+  position: relative;
+  margin: 0 0 3rem 0;
+}
+
+.form-field-container.valid input {
+  border: 2px solid #22cc22;
+}
+
+.form-field-container.invalid input {
+  border: 2px solid red;
+}
+
+.form-field-container.invalid small {
+  visibility: visible;
+}
+
+.form label {
+  color: #fff;
+  font-size: 1.3rem;
+  display: block;
+  margin: 2rem 0 0.2rem 0;
+}
+
+.form small {
+  color: #ff7777;
+  position: absolute;
+  visibility: hidden;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-bottom: 2px solid #573ab4;
+  background: #ffffffd0;
+}
+
+.form input:focus {
+  border: 3px solid #573ab4;
+}
+
+.tab2 {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.btn {
+  width: 50%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin: 2.5rem 1.5rem 0 1.5rem;
+  color: #fff;
+}
+
+.btn:focus {
+  outline: 1.4px solid #573ab4;
+  border: 2px solid #fff;
+}
+
+.btn-next, .btn-submit {
+  background: #573ab4;
+}
+
+.btn-submit {
+  display: none;
+}
+
+.btn-prev {
+  color: #000;
+  display: none;
+}
+
+.btn-prev:focus {
+  outline: 1.4px solid #fff;
+  border: 2px solid #573ab4;
+}
+
+.stepContainer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 1.4rem;
+  width: 1.4rem;
+  margin: 0 2px;
+  background-color: #573ab4;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.3;
+  color: #fff;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
