@@ -1,2 +1,1 @@
-# js-form-validator
-Multiple step form validator
+# Multiple step JavaScript form validator
