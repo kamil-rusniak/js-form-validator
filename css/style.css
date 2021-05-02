@@ -155,3 +155,12 @@ h1 {
 .step.active {
   opacity: 1;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  color: #fff;
+}
