@@ -10,6 +10,8 @@ const tab2 = document.querySelector(".tab2");
 const btnPrev = document.querySelector(".btn-prev");
 const btnNext = document.querySelector(".btn-next");
 const btnSubmit = document.querySelector(".btn-submit");
+const step1 = document.querySelector(".step1");
+const step2 = document.querySelector(".step2");
 
 // formFieldContainer is parent of input and we add invalid class to it in CSS
 function showInputError(input, errorMessage) {
@@ -87,6 +89,8 @@ function prevTab() {
   btnNext.style.display = "block";
   btnPrev.style.display = "none";
   btnSubmit.style.display = "none";
+  step1.classList.toggle("active");
+  step2.classList.toggle("active");
 }
 
 function nextTab() {
@@ -104,13 +108,15 @@ function nextTab() {
     btnNext.style.display = "none";
     btnPrev.style.display = "block";
     btnSubmit.style.display = "block";
+    step1.classList.toggle("active");
+    step2.classList.toggle("active");
   }
 }
 
 // Event listener that check second-step inputs on submit
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-
+  
   checkRequired([username, password, passwordConfirm]);
   checkLength(username, 3, 20);
   checkLength(password, 8, 65);
