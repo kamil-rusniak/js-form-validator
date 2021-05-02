@@ -24,7 +24,6 @@ h1 {
 
 .main-container {
   width: 40rem;
-  min-height: 60vh;
   background: #eaeaea55;
   box-shadow: 4px 4px 18px 3px rgba(0, 0, 0, 0.6);
   border-radius: 0.6rem;
@@ -133,7 +132,7 @@ h1 {
   border: 2px solid #573ab4;
 }
 
-.stepContainer {
+.step-container {
   text-align: center;
   margin-top: 3rem;
 }
@@ -157,8 +156,36 @@ h1 {
 footer {
   position: fixed;
   bottom: 0;
+  right: 0;
 }
 
 footer a {
   color: #fff;
+}
+
+@media (max-width: 800px) {
+  .btn {
+    margin-top: 0.1rem;
+  }
+  .step-container {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .form {
+    padding: 1.3rem 2rem;
+  }
+  .btn {
+    margin-top: 0.1rem;
+  }
+  .step-container {
+    margin-top: 1rem;
+  }
 }
