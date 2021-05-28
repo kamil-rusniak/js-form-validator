@@ -1,3 +1,3 @@
 # Multiple step JavaScript form validator
 
-https://my-javascript-form-validator.netlify.app
+https://kr-js-form-validator.netlify.app
